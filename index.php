@@ -217,9 +217,9 @@ if($jazyk == null){
 </div>
 <div class="footer">
 
-    <button onclick="setCookie('Laungage', 'en_GB', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/en.jpg" width="19" height="9" onclick="setCookie('Laungage', 'en_GB', 7)"></button>
-    <button onclick="setCookie('Laungage', 'cs', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/cz.jpg" width="19" height="9" onclick="setCookie('Laungage', 'cs_CZ', 7)"></button>
-    <button onclick="setCookie('Laungage', 'sk', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/sk.jpg" width="19" height="9" onclick="setCookie('Laungage', 'sk_SK', 7)"></button><br/>
+    <button type="button"  onclick="setCookie('Laungage', 'en_GB', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/en.jpg" width="19" height="9" onclick="setCookie('Laungage', 'en_GB', 7)" data-toggle="tooltip" data-placement="top" title="Click to select this language"></button>
+    <button onclick="setCookie('Laungage', 'cs', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/cz.jpg" width="19" height="9" onclick="setCookie('Laungage', 'cs_CZ', 7)" data-toggle="tooltip" data-placement="top" title="Klikni pro vybráni tohohle jazyka">></button>
+    <button onclick="setCookie('Laungage', 'sk', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/sk.jpg" width="19" height="9" onclick="setCookie('Laungage', 'sk_SK', 7)" data-toggle="tooltip" data-placement="top" title="Klikni pre vybranie tohto jazyka"></button><br/>
     <?php include ("src/laungage/". $jazyk .".php"); echo $CreatedBy;?>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
