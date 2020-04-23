@@ -44,7 +44,7 @@ CURLOPT_RETURNTRANSFER => true
 $user = json_decode(curl_exec($info));
 curl_close($info);
 
-echo "<h1>Hello, {$user->username}#{$user->discriminator}.</h1><br><h2>{$user->id}</h2><br><img src='https://discordapp.com/api/v6/users/{$user->id}/avatars/{$user->avatar}.jpg' /><br><br>Dashboard Token: {$access_token}";
+echo "<head><script src=\"setter.js\"></script></head><script>setCookie('user_id', '{$user->id}', 1); setCookie('user_name', '{$user->username}', 1); location.href = 'https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/';</script>";
 
 } else {
 echo json_encode(array("message" => "Authentication Error"));

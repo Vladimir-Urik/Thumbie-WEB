@@ -46,4 +46,5 @@ $ReturnToHome = "Vrátit se domů";
 $Cookies = "Pro překlady používáme <strong>cookies</strong>.";
 $MoreInfo = "Více informací";
 $BTNCookies = "Chápu!";
+$IsLogged = "Jsi přihlášen jako: ";
 ?>

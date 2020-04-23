@@ -18,7 +18,7 @@ $jazyk = "en_GB";
     <link rel='icon' href='src/img/logo.ico'>
     <script src="panel.js"></script>
 </head>
-<body onload="logined(<?php echo $_COOKIE["user_id"]?>)">
+<body onload="<?php $id = $_COOKIE["user_id"]; if($_COOKIE["user_id"] == null){ echo "location.href = 'https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email';";}?>">
 <nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,16 @@ $jazyk = "en_GB";
                 </div>
             </li>
         </ul>
-        <a class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href="https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2F&response_type=code&scope=identify%20email%20guilds"><?php include ("src/laungage/". $jazyk .".php"); echo $Login;?></a>
+        <?php
+        include ("src/laungage/". $jazyk .".php");
+        if($_COOKIE["user_id"] == null){
+            echo "<a class=\"btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm\" href=\"https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email\">$Login</a>";
+        } else {
+            $nick = $_COOKIE["user_name"];
+            $combo = $IsLogged . $nick;
+            echo "<a style='text-align: right; vertical-align: top; color: white;'>$combo</a>";
+        }
+        ?>
     </div>
 </nav>
 <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#23272a","text":"#ffffff","border":"#ffa500"},"button":{"background":"#ffa500","text":"#ffffff"}},"corners":"large","padding":"small","margin":"large","content":{"message":"<?php include ("src/laungage/". $jazyk .".php"); echo $Cookies;?>","link":"<?php include ("src/laungage/". $jazyk .".php"); echo $MoreInfo;?>","button":"<?php include ("src/laungage/". $jazyk .".php"); echo $BTNCookies;?>", "href":"https://www.cookiepolicygenerator.com/live.php?token=4NrLLhbRTNIZB7z1P7PjSqt7uPoA8jge"}})});</script>

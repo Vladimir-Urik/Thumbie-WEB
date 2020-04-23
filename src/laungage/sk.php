@@ -46,4 +46,5 @@ $ReturnToHome = "Späť na hlavnú stránku";
 $Cookies = "Používame súbory <strong>cookies</strong> kvôli výberu jazyku a pre funkčnosť nášho webu";
 $MoreInfo = "Viac info";
 $BTNCookies = "Okey!";
+$IsLogged = "Si prihlásení ako: ";
 ?>
