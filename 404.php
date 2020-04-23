@@ -17,6 +17,10 @@ $jazyk = $_COOKIE["Laungage"];
     <title><?php include 'src/laungage/en_GB.php'; echo $Title;?></title>
     <script src="cookies/Laungage.js"></script>
     <meta name="author" content="GGGEDR">
+    <script>function odhlasit() {
+            document.cookie = "user_id=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+            document.cookie = "user_name=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        }</script>
 </head>
 <body onload="setCookier('Laungage', 'en_GB', 7)">
 <nav class="navbar navbar-expand-lg bg-transparent">
@@ -53,7 +57,18 @@ $jazyk = $_COOKIE["Laungage"];
         } else {
             $nick = $_COOKIE["user_name"];
             $combo = $IsLogged . $nick;
-            echo "<a style='text-align: right; vertical-align: top; color: white;'>$combo</a>";
+
+            echo "<li class=\"nav-item dropdown\" style='text-align: right; vertical-align: top;'>
+                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" style='text-align: right; vertical-align: top;'>
+                    $IsLogged $nick
+                </a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style='text-align: right; vertical-align: top;'>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">Servers</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">Settings</a>
+                    <div class=\"dropdown-divider\" style='text-align: right; vertical-align: top;'></div>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">Logout</a>
+                </div>
+            </li>";
         }
         ?>
     </div>
