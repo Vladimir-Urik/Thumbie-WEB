@@ -46,4 +46,5 @@ $ReturnToHome = "Return to homepage";
 $Cookies = "We use <strong>cookies</strong> to remember your chosen language and to ensure you get the best experience.";
 $MoreInfo = "More info";
 $BTNCookies = "Got it!";
+$IsLogged = "You are logged in as: ";
 ?>
