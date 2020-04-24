@@ -34,7 +34,7 @@ getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tut
 <div class="heading text-center">
     <img src="img/logo.png">
     <h1 class="display-5 title">In construction</h1>
-    <p class="subtitle">When it's done you'll find out about it on our <a style="color:orange;" href="discord.thumbie.eu">Discord</a></p>
+    <p class="subtitle">When it's done you'll find out about it on our <a style="color:orange;" href="https://discord.thumbie.eu"><strong>Discord</strong></a></p>
     <a class="btn btn-primary btn-lg" href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/" role="button"><?php include ("src/laungage/". $jazyk .".php"); echo $ReturnToHome;?></a>
     <br /><br /><br /><br /><br /><br />
 </div>
