@@ -44,7 +44,7 @@ function getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Comma
                 <a class=\"nav-link\" href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/\">$Home<span class=\"sr-only\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/about\">$About</a>
+                <a class=\"nav-link\" href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/About\">$About</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#features\">$Features</a>
