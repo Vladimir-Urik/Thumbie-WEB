@@ -22,6 +22,7 @@ if($jazyk == null){
     <script>function odhlasit() {
             document.cookie = "user_id=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
             document.cookie = "user_name=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+            document.cookie = "user_avatar=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
         }</script>
 </head>
 <body onload="setCookier('Laungage', 'en_GB', 7)">

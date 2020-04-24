@@ -22,6 +22,7 @@ if($jazyk == null){
     <script>function odhlasit() {
             document.cookie = "user_id=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
             document.cookie = "user_name=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+            document.cookie = "user_avatar=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
         }</script>
 </head>
 <body onload="<?php $id = $_COOKIE["user_id"]; if($_COOKIE["user_id"] == null){ echo "location.href = 'https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email';";}?>">
