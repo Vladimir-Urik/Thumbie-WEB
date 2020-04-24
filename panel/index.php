@@ -81,11 +81,14 @@ if($jazyk == null){
 <div class="heading text-center" style="text-align: left !important;">
     <img src="src/img/logo.png" style="text-align: left;" width="75" height="75">
     <h1 class="display-5 title" style="text-align: left"><?php include ("src/laungage/". $jazyk .".php"); echo $Dashboard;?> v.BETA-0.0.1</h1>
-    <a class="btn btn-primary" href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/" role="button" style="text-align: left !important;">Servers</a>
+    <a class="btn btn-primary" href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/panel/servers.php" role="button" style="text-align: left !important;"><?php include("src/laungage/" . $jazyk . ".php");
+            echo $Servers?></a>
 <br />
-    <a class="btn btn-primary" href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/" role="button" style="text-align: left !important;">Shop</a>
+    <a class="btn btn-primary" href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/shop/" role="button" style="text-align: left !important;"><?php include("src/laungage/" . $jazyk . ".php");
+        echo $Shop?></a></a>
     <br/>
-    <a class="btn btn-primary" href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/" role="button" style="text-align: left !important;">Invite</a>
+    <a class="btn btn-primary" href="https://discordapp.com/oauth2/authorize?scope=bot&permissions=8&client_id=699959562454827009" role="button" style="text-align: left !important;"><?php include("src/laungage/" . $jazyk . ".php");
+        echo $Invite?></a>
     <br /><br /><br /><br /><br /><br />
 </div>
 <div class="features" id="features">

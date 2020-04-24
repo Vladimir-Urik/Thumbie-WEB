@@ -51,4 +51,5 @@ $IsLogged = "Jsi přihlášen jako: ";
 $Servers = "Servery";
 $Settings = "Nastavení";
 $Logout = "Odhlásit se";
+$Shop = "Obchod";
 ?>

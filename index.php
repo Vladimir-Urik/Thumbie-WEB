@@ -122,7 +122,7 @@ if($jazyk == null){
     <h1 class="display-5 title"><?php include ("src/laungage/". $jazyk .".php"); echo $Welcome;?></h1>
     <p class="subtitle"><?php include ("src/laungage/". $jazyk .".php"); echo $Des;?></p>
     <a class="btn btn-primary btn-lg" href="panel/" role="button"><?php include ("src/laungage/". $jazyk .".php"); echo $Dashboard;?></a>
-    <a class="btn btn-secondary btn-lg" href="#start" role="button"><?php include ("src/laungage/". $jazyk .".php"); echo $Invite;?></a>
+    <a class="btn btn-secondary btn-lg" href="https://discordapp.com/oauth2/authorize?scope=bot&permissions=8&client_id=699959562454827009" role="button"><?php include ("src/laungage/". $jazyk .".php"); echo $Invite;?></a>
     <br /><br /><br /><br /><br /><br />
 </div>
 <div class="features" id="features">

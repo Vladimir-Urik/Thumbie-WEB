@@ -51,4 +51,5 @@ $IsLogged = "Si prihlásení ako: ";
 $Servers = "Servery";
 $Settings = "Nastavenia";
 $Logout = "Odhlásiť sa";
+$Shop = "Obchod";
 ?>

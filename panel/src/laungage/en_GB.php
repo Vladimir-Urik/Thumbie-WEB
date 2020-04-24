@@ -51,4 +51,5 @@ $IsLogged = "You are logged in as: ";
 $Servers = "Servers";
 $Settings = "Settings";
 $Logout = "Logout";
+$Shop = "Shop";
 ?>
