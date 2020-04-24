@@ -93,8 +93,8 @@ if($jazyk == null){
 <script src="src/js/now-ui-kit.min.js"></script>
 <div class="footer">
     <button onclick="setCookie('Laungage', 'en_GB', 7); history.go(0);" style="background: transparent; border: transparent"><img src="img/en.jpg" width="19" height="9" onclick="setCookie('Laungage', 'en_GB', 7)"></button>
-    <button onclick="setCookie('Laungage', 'cs_CZ', 7); history.go(0);" style="background: transparent; border: transparent"><img src="img/cz.jpg" width="19" height="9" onclick="setCookie('Laungage', 'cs_CZ', 7)"></button>
-    <button onclick="setCookie('Laungage', 'sk_SK', 7); history.go(0);" style="background: transparent; border: transparent"><img src="img/sk.jpg" width="19" height="9" onclick="setCookie('Laungage', 'sk_SK', 7)"></button><br/>
+    <button onclick="setCookie('Laungage', 'cs', 7); history.go(0);" style="background: transparent; border: transparent"><img src="img/cz.jpg" width="19" height="9" onclick="setCookie('Laungage', 'cs_CZ', 7)"></button>
+    <button onclick="setCookie('Laungage', 'sk', 7); history.go(0);" style="background: transparent; border: transparent"><img src="img/sk.jpg" width="19" height="9" onclick="setCookie('Laungage', 'sk_SK', 7)"></button><br/>
     <?php include 'src/laungage/en_GB.php'; echo $CreatedBy;?>
 </div>
 </body>

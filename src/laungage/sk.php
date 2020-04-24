@@ -23,9 +23,9 @@ $ThreeCardTitle = "Hudba";
 $ThreeCardSubtitle = "We offer the best music without lags. You can listen to YouTube, Spotify, even to radio! You can choose between many controls - again, it's up to you!";
 $FourCardTitle = "Memes";
 $FourCardSubtitle = "Have you ever wanted the dankest memes? We have them! You can choose from many subreddits, or even from your own! Just invite Thumbie and watch!";
-$FiveCardTitle = "Giveaways";
+$FiveCardTitle = "Sútaže";
 $FiveCardSubtitle = "Have you ever wanted to do a giveaway, but with completely customizable messages? It's here! With Thumbie, your giveaways will be the best from all.";
-$SixCardTitle = "Reaction roles";
+$SixCardTitle = "Reakčné role";
 $SixCardSubtitle = "Are you tired from setting each members a role? Now you don't have to! Thumbie offers reaction roles! When users reacts to a message, they will get a role!";
 $SevenCardTitle = "Uvítanie";
 $SevenCardSubtitle = "Do you want something different than the default Discord's welcomes? Do you want to customize it? You can! The only thing you need to do is to invite Thumbie!";
@@ -40,7 +40,7 @@ $BTNStarted = "Pozvať!";
 $CreatedBy = "Vytvoril <a href=\"https://GGGEDR.eu\"> GGGEDR</a> s <a style='color: orange'>♡</a>";
 //NEW
 //ERRORS
-$ERRFourZeroFour = "ERROR 404";
+$ERRFourZeroFour = "CHYBA 404";
 $ERRFourZeroFourSub = "Táto stránka neexistuje alebo k nej nemáte prístup<br />Ak si myslíte že ide o chybu kontaktujte prosím Administrátora";
 $ReturnToHome = "Späť na hlavnú stránku";
 //COOKIES

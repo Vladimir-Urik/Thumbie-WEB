@@ -42,7 +42,7 @@ $CreatedBy = "Vytvořil <a href=\"https://GGGEDR.eu\"> GGGEDR</a> s <a style='co
 //NEW
 //ERRORS
 $ERRFourZeroFour = "CHYBA 404";
-$ERRFourZeroFourSub = "Tato stránka neexistuje nebo k ní nemáš přístup. Pokud si myslíš, že je to chyba, kontaktuj administrátora.";
+$ERRFourZeroFourSub = "Tato stránka neexistuje nebo k ní nemáš přístup. <br /> Pokud si myslíš, že je to chyba, kontaktuj administrátora.";
 $ReturnToHome = "Vrátit se domů";
 $Cookies = "Pro překlady používáme <strong>cookies</strong>.";
 $MoreInfo = "Více informací";
