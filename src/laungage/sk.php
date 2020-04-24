@@ -1,5 +1,6 @@
 <?php
 $Title = "Thumbie &bull; Domov";
+$TitlePanel = "Thumbie &bull; Panel";
 $Welcome = "Je čas prejsť na Thumbieho.";
 $Invite = "Pridať na server";
 $Dashboard = "Panel";
@@ -47,4 +48,7 @@ $Cookies = "Používame súbory <strong>cookies</strong> kvôli výberu jazyku a
 $MoreInfo = "Viac info";
 $BTNCookies = "Okey!";
 $IsLogged = "Si prihlásení ako: ";
+$Servers = "Servery";
+$Settings = "Nastavenia";
+$Logout = "Odhlásiť sa";
 ?>

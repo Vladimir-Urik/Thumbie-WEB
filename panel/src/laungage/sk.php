@@ -48,4 +48,7 @@ $Cookies = "Používame súbory <strong>cookies</strong> kvôli výberu jazyku a
 $MoreInfo = "Viac info";
 $BTNCookies = "Okey!";
 $IsLogged = "Si prihlásení ako: ";
+$Servers = "Servery";
+$Settings = "Nastavenia";
+$Logout = "Odhlásiť sa";
 ?>

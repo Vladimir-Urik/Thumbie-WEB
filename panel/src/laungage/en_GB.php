@@ -48,4 +48,7 @@ $Cookies = "We use <strong>cookies</strong> to remember your chosen language and
 $MoreInfo = "More info";
 $BTNCookies = "Got it!";
 $IsLogged = "You are logged in as: ";
+$Servers = "Servers";
+$$Settings = "Settings";
+$Logout = "Logout";
 ?>

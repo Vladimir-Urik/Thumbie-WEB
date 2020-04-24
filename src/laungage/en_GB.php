@@ -1,5 +1,6 @@
 <?php
 $Title = "Thumbie &bull; Home";
+$TitlePanel = "Thumbie &bull; Dashboard";
 $Welcome = "It's time to switch to Thumbie.";
 $Invite = "Add to server";
 $Dashboard = "Dashboard";
@@ -47,4 +48,7 @@ $Cookies = "We use <strong>cookies</strong> to remember your chosen language and
 $MoreInfo = "More info";
 $BTNCookies = "Got it!";
 $IsLogged = "You are logged in as: ";
+$Servers = "Servers";
+$$Settings = "Settings";
+$Logout = "Logout";
 ?>

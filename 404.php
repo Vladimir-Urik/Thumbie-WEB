@@ -61,15 +61,17 @@ if($jazyk == null){
             $nick = "<p style='color:orange;'>" . $_COOKIE["user_name"] . "</p>";
             $combo = $IsLogged . $nick;
 
+            include("src/laungage/" . $jazyk . ".php");
             echo "<li class=\"nav-item dropdown\" style='text-align: right; vertical-align: top;'>
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" style='text-align: right; vertical-align: top;'>
                     $IsLogged $nick
                 </a>
+                
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style='text-align: right; vertical-align: top;'>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">Servers</a>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">Settings</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">$Servers</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">$Settings</a>
                     <div class=\"dropdown-divider\" style='text-align: right; vertical-align: top;'></div>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">Logout</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">$Logout</a>
                 </div>
             </li>";
         }

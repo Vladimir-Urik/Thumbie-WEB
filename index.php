@@ -91,15 +91,17 @@ if($jazyk == null){
             $nick = "<p style='color:orange;'>" . $_COOKIE["user_name"] . "</p>";
             $combo = $IsLogged . $nick;
 
+            include("src/laungage/" . $jazyk . ".php");
             echo "<li class=\"nav-item dropdown\" style='text-align: right; vertical-align: top;'>
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" style='text-align: right; vertical-align: top;'>
                     $IsLogged $nick
                 </a>
+                
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\" style='text-align: right; vertical-align: top;'>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">Servers</a>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">Settings</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">$Servers</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">$Settings</a>
                     <div class=\"dropdown-divider\" style='text-align: right; vertical-align: top;'></div>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">Logout</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">$Logout</a>
                 </div>
             </li>";
         }
@@ -244,7 +246,7 @@ if($jazyk == null){
 </div>
 <div class="footer">
 
-    <button type="button"  onclick="setCookie('Laungage', 'en_GB', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/en.jpg" width="19" height="9" onclick="setCookie('Laungage', 'en_GB', 7)" data-toggle="tooltip" data-placement="top" title="Click to select this language"></button>
+    <button onclick="setCookie('Laungage', 'en_GB', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/en.jpg" width="19" height="9" onclick="setCookie('Laungage', 'en_GB', 7)" data-toggle="tooltip" data-placement="top" title="Click to select this language"></button>
     <button onclick="setCookie('Laungage', 'cs', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/cz.jpg" width="19" height="9" onclick="setCookie('Laungage', 'cs_CZ', 7)" data-toggle="tooltip" data-placement="top" title="Klikni pro vybráni tohohle jazyka"></button>
     <button onclick="setCookie('Laungage', 'sk', 7); history.go(0); location.href = '#n';" style="background: transparent; border: transparent"><img src="img/sk.jpg" width="19" height="9" onclick="setCookie('Laungage', 'sk_SK', 7)" data-toggle="tooltip" data-placement="top" title="Klikni pre vybranie tohto jazyka"></button><br/>
     <?php include ("src/laungage/". $jazyk .".php"); echo $CreatedBy;?>

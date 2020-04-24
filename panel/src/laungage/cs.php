@@ -48,4 +48,7 @@ $Cookies = "Pro překlady používáme <strong>cookies</strong>.";
 $MoreInfo = "Více informací";
 $BTNCookies = "Chápu!";
 $IsLogged = "Jsi přihlášen jako: ";
+$Servers = "Servery";
+$Settings = "Nastavení";
+$Logout = "Odhlásit se";
 ?>
