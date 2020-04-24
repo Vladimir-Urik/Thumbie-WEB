@@ -17,7 +17,7 @@ if($jazyk == null){
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/now-ui-kit.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
-    <title><?php include 'src/laungage/en_GB.php'; echo $Title;?></title>
+    <title>Thumbie &bull; <?php include 'src/laungage/en_GB.php'; echo $ERRFourZeroFour;?></title>
     <script src="cookies/Laungage.js"></script>
     <meta name="author" content="GGGEDR">
     <script>function odhlasit() {
