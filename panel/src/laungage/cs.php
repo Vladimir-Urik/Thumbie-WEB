@@ -1,5 +1,6 @@
 <?php
 $Title = "Thumbie &bull; Domů";
+$TitlePanel = "Thumbie &bull; Panel";
 $Welcome = "Je čas přepnout na Thumbieho.";
 $Invite = "Přidat na server";
 $Dashboard = "Panel";

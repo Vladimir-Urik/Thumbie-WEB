@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="66477281-dc62-4cff-b779-6e1ef8686ee9" name="GreenLand-PrivateCloud" url="http://ftp.hostify.cz">
+      <webServer id="d7de139a-2f2c-483e-a951-c55cc01fb74c" name="Cloud" url="http://ftp.hostify.cz">
         <fileTransfer host="ftp.hostify.cz" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

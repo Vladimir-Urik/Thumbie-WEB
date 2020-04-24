@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="GreenLand-PrivateCloud">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Cloud">
     <serverData>
-      <paths name="GreenLand-PrivateCloud">
+      <paths name="Cloud">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping local="" />
           </mappings>
         </serverdata>
       </paths>

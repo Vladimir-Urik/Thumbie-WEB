@@ -27,7 +27,10 @@ or die('Error connecting to MySQL server.');
 //    }
 //    echo $sdaa;
 //}
-//
+//    <script>function odhlasit() {
+//            document.cookie = "user_id=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+//            document.cookie = "user_name=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+//        }</script>
 //$jazyk = getLaungage();
 $jazyk = $_COOKIE["Laungage"];
 if($jazyk == null){
@@ -85,7 +88,7 @@ if($jazyk == null){
         if($_COOKIE["user_id"] == null){
             echo "<a class=\"btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm\" href=\"https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email\">$Login</a>";
         } else {
-            $nick = "<div style='color: orange'>" . $_COOKIE["user_name"] . "</div>";
+            $nick = "<p style='color:orange;'>" . $_COOKIE["user_name"] . "</p>";
             $combo = $IsLogged . $nick;
 
             echo "<li class=\"nav-item dropdown\" style='text-align: right; vertical-align: top;'>

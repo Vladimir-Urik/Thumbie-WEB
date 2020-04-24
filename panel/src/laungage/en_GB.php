@@ -1,5 +1,6 @@
 <?php
 $Title = "Thumbie &bull; Home";
+$TitlePanel = "Thumbie &bull; Dashboard";
 $Welcome = "It's time to switch to Thumbie.";
 $Invite = "Add to server";
 $Dashboard = "Dashboard";
