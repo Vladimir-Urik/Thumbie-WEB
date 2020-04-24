@@ -44,7 +44,7 @@ CURLOPT_RETURNTRANSFER => true
 $user = json_decode(curl_exec($info));
 curl_close($info);
 
-echo "<head><script src=\"setter.js\"></script></head><script>setCookie('user_id', '{$user->id}', 1); setCookie('user_name', '{$user->username}', 1); location.href = 'https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/';</script>";
+echo "<head><script src=\"setter.js\"></script></head><script>setCookie('user_id', '{$user->id}', 1); setCookie('user_name', '{$user->username}', 1); setCookie('user_avatar', '{$user->avatar}', 1); location.href = 'https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/';</script>";
 
 } else {
 echo json_encode(array("message" => "Authentication Error"));
