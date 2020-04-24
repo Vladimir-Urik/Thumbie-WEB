@@ -49,6 +49,6 @@ $MoreInfo = "More info";
 $BTNCookies = "Got it!";
 $IsLogged = "You are logged in as: ";
 $Servers = "Servers";
-$$Settings = "Settings";
+$Settings = "Settings";
 $Logout = "Logout";
 ?>
