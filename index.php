@@ -98,7 +98,9 @@ if($jazyk == null){
             $combo = $IsLogged . $nick;
 
             include("src/laungage/" . $jazyk . ".php");
-            echo "<li class=\"nav-item dropdown\" style='text-align: right; vertical-align: top;'>
+            echo "<br/>
+<br/>
+<li class=\"nav-item dropdown\" style='text-align: right; vertical-align: top;'>
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" style='text-align: right; vertical-align: top; color: orange'>
                     $nick
                 </a>
@@ -109,7 +111,8 @@ if($jazyk == null){
                     <div class=\"dropdown-divider\" style='text-align: right; vertical-align: top;'></div>
                     <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">$Logout</a>
                 </div>
-            </li>";
+            </li>
+            <a>‎‎‎‎‎‎ ‍  ‍  ‍   ‍  ‍  ‍   </a>";
         }
         ?>
     </div>
