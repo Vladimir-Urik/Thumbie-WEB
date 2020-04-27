@@ -29,10 +29,11 @@ if(!isset($_GET['user_id'])){
            document.getElementById(\"captured\").classList.remove(\"shown\");
 
       };
+      var canvas = document.getElementById(\"canvas\");
       var canvas_wrapper = document.createElement(\"div\");
       canvas_wrapper.className = \"canvas_wrapper\";
       canvas_wrapper.appendChild(canvas);
-
+      
       document.getElementById(\"captured\").appendChild(canvas_wrapper);
       document.getElementById(\"captured\").classList.add(\"shown\");
     });

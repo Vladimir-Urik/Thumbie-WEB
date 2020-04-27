@@ -1,14 +1,5 @@
 <?php
 //Step1
-$servername = "remotemysql.com";
-$username = "NEgfqq1rAL";
-$database = "NEgfqq1rAL";
-$password = "RaHX1T8Qe9";
-$db = mysqli_connect($servername,$username,$password,$database)
-or die('Error connecting to MySQL server.');
-
-$dbn = mysqli_connect($servername,$username,$password,$database)
-or die('Error connecting to MySQL server.');
 //$provider = new Discord([
 //    'clientId'     => '699959562454827009',
 //    'clientSecret' => 'eHV_YdI2AQZZHsig8nKcBFyca_N9HCo9',
@@ -77,61 +68,19 @@ getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tut
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php include ("src/laungage/". $jazyk .".php"); echo $Servers;?></h5>
-                <h1 style="font-weight: bold !important"><?php
-                    //Step2
-                    $queryd = "SELECT `INT` FROM `general` WHERE STAT = ?";
-
-                    $idm = "servers";
-
-                    if ($stmtj = $dbn->prepare($queryd)) {
-
-                        $stmtj->bind_param('s', $idm);
-
-                        $stmtj->execute();
-                        $stmtj->bind_result($intsr);
-                        $stmtj->fetch();
-
-                        echo $intsr;
-
-                        $stmtj->close();
-                    } else {
-
-                        echo "ERR";
-                    }
-                    ?></h1>
+                <h1 style="font-weight: bold !important">3</h1>
             </div>
         </div>
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php include ("src/laungage/". $jazyk .".php"); echo $Users;?></h5>
-                <h1 style="font-weight: bold !important"><?php
-                    //Step2
-                    $query = "SELECT `INT` FROM `general` WHERE STAT = ?";
-
-                    $id = "members";
-
-                    if ($stmt = $db->prepare($query)) {
-
-                        $stmt->bind_param('i', $id);
-
-                        $stmt->execute();
-                        $stmt->bind_result($int);
-                        $stmt->fetch();
-
-                        echo "$int";
-
-                        $stmt->close();
-                    } else {
-
-                        echo "ERR";
-                    }
-                    ?></h1>
+                <h1 style="font-weight: bold !important">12+</h1>
             </div>
         </div>
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php include ("src/laungage/". $jazyk .".php"); echo $Channels;?></h5>
-                <h1 style="font-weight: bold !important">35</h1>
+                <h1 style="font-weight: bold !important">40+</h1>
             </div>
         </div>
     </div>

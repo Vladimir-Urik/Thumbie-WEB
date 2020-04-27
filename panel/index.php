@@ -15,6 +15,7 @@ if($jazyk == null){
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/now-ui-kit.css">
+    <link rel="stylesheet" href="src/css/panel.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
     <title><?php include ("src/laungage/". $jazyk .".php"); echo $TitlePanel;?></title>
     <script href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/cookies/Laungage.js"></script>
