@@ -5,8 +5,9 @@ function getLogin($Servers, $Settings, $Logout, $IsLogged, $Login){
     if ($_COOKIE["user_id"] == null) {
         echo "<a class=\"btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm\" href=\"https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email\">$Login</a>";
     } else {
-        $user_id = $_COOKIE["user_id"];
-        $user_avatar = $_COOKIE["user_avatar"];
+        $user_id = base64_decode($_COOKIE["user_id"]);
+        $user_name = base64_decode($_COOKIE["user_name"]);
+        $user_avatar = base64_decode($_COOKIE["user_avatar"]);
         $nick = "<p style='color:orange;'>     <img src='https://cdn.discordapp.com/avatars/$user_id/$user_avatar.webp' height='40' width='40' style='    -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
