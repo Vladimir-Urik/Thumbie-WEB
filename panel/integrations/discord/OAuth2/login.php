@@ -30,6 +30,8 @@ curl_close($token);
 if (isset($resp->access_token)) {
 $access_token = $resp->access_token;
 
+$info_servers = "https://discordapp.com/api/users/@me";
+
 $info_request = "https://discordapp.com/api/users/@me";
 
 $info = curl_init();
