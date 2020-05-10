@@ -53,4 +53,5 @@ $Settings = "Nastavenia";
 $Logout = "Odhlásiť sa";
 $Shop = "Obchod";
 $Sponsors = "Sponzory: <a href=\"https://hostnow.cz\"><strong>Hostnow.cz</strong>";
+$Credits = "Credits";
 ?>
