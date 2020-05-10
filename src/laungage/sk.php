@@ -37,7 +37,7 @@ $Channels = "Kanály";
 $StartCardTitle = "Začnite teraz!";
 $StartCardSubtitle = "Pozvi Thumbieho - Jedinný bot ktorého budete potrebovať!";
 $BTNStarted = "Pozvať!";
-$CreatedBy = "Vytvoril <a href=\"https://GGGEDR.eu\"> GGGEDR</a> s <a style='color: orange'>♡</a>";
+$CreatedBy = "Vytvoril <a href=\"mailto://GGGEDR@thumbie.me\"> GGGEDR</a> s <a style='color: orange'>♡</a>";
 //NEW
 //ERRORS
 $ERRFourZeroFour = "CHYBA 404";
@@ -51,4 +51,6 @@ $IsLogged = "Si prihlásení ako: ";
 $Servers = "Servery";
 $Settings = "Nastavenia";
 $Logout = "Odhlásiť sa";
+$Shop = "Obchod";
+$Sponsors = "Sponzory: <a href=\"https://hostnow.cz\"><strong>Hostnow.cz</strong>";
 ?>

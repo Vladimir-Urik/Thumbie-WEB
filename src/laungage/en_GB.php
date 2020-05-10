@@ -38,7 +38,7 @@ $Channels = "Channels";
 $StartCardTitle = "Get started now!";
 $StartCardSubtitle = "Invite Thumbie - the only bot you'll ever need!";
 $BTNStarted = "Get started!";
-$CreatedBy = "Created by <a href=\"https://GGGEDR.eu\"> GGGEDR</a> with <a style='color: orange'>♡</a>";
+$CreatedBy = "Created by <a href=\"mailto://GGGEDR@thumbie.me\"> GGGEDR</a> with <a style='color: orange'>♡</a>";
 //NEW
 //ERRORS
 $ERRFourZeroFour = "ERROR 404";
@@ -51,4 +51,6 @@ $IsLogged = "You are logged in as: ";
 $Servers = "Servers";
 $Settings = "Settings";
 $Logout = "Logout";
+$Shop = "Shop";
+$Sponsors = "Sponsors: <a href=\"https://hostnow.cz\"><strong>Hostnow.cz</strong>";
 ?>

@@ -1,4 +1,5 @@
 <?php
+session_start();//SELECT table_name, column_name FROM Information_schema.columns WHERE table_name like 'users' ORDER BY table_name DESC
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -6,7 +7,7 @@ error_reporting(E_ALL);
 if (isset($_GET["error"])) {
 echo json_encode(array("message" => "Authorization Error"));
 } elseif (isset($_GET["code"])) {
-$redirect_uri = "https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/panel/integrations/discord/OAuth2/login.php";
+$redirect_uri = "https://thumbie.me/panel/integrations/discord/OAuth2/login.php";
 $token_request = "https://discordapp.com/api/oauth2/token";
 
 $token = curl_init();
@@ -49,8 +50,10 @@ curl_close($info);
 $user_id = base64_encode($user->id);
 $user_name = base64_encode($user->username);
 $user_avatar = base64_encode($user->avatar);
-
-echo "<head><script src=\"setter.js\"></script></head><script>setCookie('user_id', '{$user_id}', 1); setCookie('user_name', '{$user_name}', 1); setCookie('user_avatar', '{$user_avatar}', 1); location.href = 'https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/';</script>";
+$_SESSION["id"] = $user_id;
+$_SESSION["name"] = $user_name;
+$_SESSION["user_avatar"] = $user_avatar;
+echo "<script> location.href = 'https://thumbie.me/';</script>";
 
 } else {
 echo json_encode(array("message" => "Authentication Error"));

@@ -1,1 +1,14 @@
-ErrorDocument 404 https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/404.php
+IndexIgnore * # prevent directory listing
+
+Order deny,allow
+Allow from *
+
+# ------------------------------------------
+# Rewrite so that php extentions are not shown
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+ErrorDocument 404 https://thumbie.me/404.php

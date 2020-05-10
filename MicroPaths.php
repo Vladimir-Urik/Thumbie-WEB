@@ -1,13 +1,13 @@
 <?php
+session_start();
 
 function getLogin($Servers, $Settings, $Logout, $IsLogged, $Login){
 
-    if ($_COOKIE["user_id"] == null) {
+    if ($_SESSION["id"] == null) {
         echo "<a class=\"btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm\" href=\"https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fprivate.greenlandmc.eu%2Ftajny-projekt%2FGGGEDR%2FThumbie%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email\">$Login</a>";
     } else {
-        $user_id = base64_decode($_COOKIE["user_id"]);
-        $user_name = base64_decode($_COOKIE["user_name"]);
-        $user_avatar = base64_decode($_COOKIE["user_avatar"]);
+        $user_id = base64_decode($_SESSION["id"]);
+        $user_avatar = base64_decode($_SESSION["user_avatar"]);
         $nick = "<p style='color:orange;'>     <img src='https://cdn.discordapp.com/avatars/$user_id/$user_avatar.webp' height='40' width='40' style='    -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -26,7 +26,7 @@ function getLogin($Servers, $Settings, $Logout, $IsLogged, $Login){
                     <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">$Servers</a>
                     <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"#\">$Settings</a>
                     <div class=\"dropdown-divider\" style='text-align: right; vertical-align: top;'></div>
-                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' onclick='odhlasit()' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\">$Logout</a>
+                    <a class=\"dropdown-item\" style='text-align: right; vertical-align: top;' href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/logout\">$Logout</a>
                 </div>
             </li>
             <a>‎‎‎‎‎‎ ‍  ‍  ‍   ‍  ‍  ‍   </a>";
@@ -42,13 +42,13 @@ function getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Comma
     <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
         <ul class=\"navbar-nav mr-auto\">
             <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/\">$Home<span class=\"sr-only\">(current)</span></a>
+                <a class=\"nav-link\" href=\"https://thumbie.me\">$Home<span class=\"sr-only\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"About\">$About</a>
+                <a class=\"nav-link\" href=\"https://thumbie.me/About\">$About</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#features\">$Features</a>
+                <a class=\"nav-link\" href=\"https://thumbie.me/#features\">$Features</a>
             </li>
             <li class=\"nav-item dropdown\">
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -59,20 +59,25 @@ function getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Comma
                     <a class=\"dropdown-item\" href=\"/tutorials\">$Tutorial</a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"/server-settings\">$sett</a>
+                    <div class=\"dropdown-divider\"></div>
+                    <a class=\"dropdown-item\" href=\" /credits\">Credits</a>
                 </div>
             </li>
         </ul>";
-        getLogin($Servers, $Settings, $Logout, $IsLogged, $Login);
+    getLogin($Servers, $Settings, $Logout, $IsLogged, $Login);
     echo "</div>
 </nav>";
 }
 
-function getFooter($CreatedBy){
+function getFooter($CreatedBy, $Sponsors){
     echo "<div class=\"footer\">
-    <button onclick=\"setCookie('Laungage', 'en_GB', 7); history.go(0); location.href = '#n';\" style=\"background: transparent; border: transparent\"><img src=\"img/en.jpg\" width=\"19\" height=\"9\" onclick=\"setCookie('Laungage', 'en_GB', 7)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Click to select this language\"></button>
-    <button onclick=\"setCookie('Laungage', 'cs', 7); history.go(0); location.href = '#n';\" style=\"background: transparent; border: transparent\"><img src=\"img/cz.jpg\" width=\"19\" height=\"9\" onclick=\"setCookie('Laungage', 'cs_CZ', 7)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Klikni pro vybráni tohohle jazyka\"></button>
-    <button onclick=\"setCookie('Laungage', 'sk', 7); history.go(0); location.href = '#n';\" style=\"background: transparent; border: transparent\"><img src=\"img/sk.jpg\" width=\"19\" height=\"9\" onclick=\"setCookie('Laungage', 'sk_SK', 7)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Klikni pre vybranie tohto jazyka\"></button><br/>
+    <button onclick=\"setCookie('Laungage', 'en_GB', 7); history.go(0);\" style=\"background: transparent; border: transparent\"><img src=\"https://thumbie.me/img/en.jpg\" width=\"19\" height=\"9\" onclick=\"setCookie('Laungage', 'en_GB', 7)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Click to select this language\"></button>
+    <button onclick=\"setCookie('Laungage', 'cs', 7); history.go(0);\" style=\"background: transparent; border: transparent\"><img src=\"https://thumbie.me/img/cz.jpg\" width=\"19\" height=\"9\" onclick=\"setCookie('Laungage', 'cs_CZ', 7)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Klikni pro vybráni tohohle jazyka\"></button>
+    <button onclick=\"setCookie('Laungage', 'sk', 7); history.go(0);\" style=\"background: transparent; border: transparent\"><img src=\"https://thumbie.me/img/sk.jpg\" width=\"19\" height=\"9\" onclick=\"setCookie('Laungage', 'sk_SK', 7)\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Klikni pre vybranie tohto jazyka\"></button><br/><br/>
     $CreatedBy
+    <br />
+    <br />
+    $Sponsors</a>
 </div>";
 }
 
