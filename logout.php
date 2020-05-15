@@ -6,5 +6,5 @@ session_start();
 // out. This also happens automatically when the browser is closed
 session_destroy();
 
-echo "<html><body onload='location.href = \"https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie\"'></body></html>";
+echo "<html><body onload='location.href = \"https://thumbie.me\"'></body></html>";
 ?>

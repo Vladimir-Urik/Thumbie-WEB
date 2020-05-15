@@ -35,12 +35,13 @@ if($jazyk == null){
     <meta name="description" content="Official page for Thumbie (Discord Bot) &cross; [In the construction]">
     <meta name="theme-color" content="#ff9900">
     <meta name="author" content="GGGEDR">
-    <meta property="og:image" content="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/img/logo.png">
-    <meta name="keywords" content="Thumbie, Discord, Bot, Java, Full Customize, Mysql, Thumbie Bot, GGGEDR, Hypixel">
+    <meta property="og:image" content="https://thumbie.me/img/logo.png">
+    <meta name="keywords" content="tuhmbie.me, Thumbie, Discord, Bot, Java, Full Customize, Mysql, Thumbie Bot, GGGEDR">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/now-ui-kit.css">
+    <meta name="googlebot" content="index, follow" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
     <title><?php include ("src/laungage/". $jazyk .".php"); echo $Title;?></title>
     <script src="cookies/Laungage.js"></script>
@@ -54,7 +55,7 @@ if($jazyk == null){
 <body onload="setCookier('Laungage', 'en_GB', 7)">
 <?php
 include ("MicroPaths.php");
-getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tutorial, $sett, $About, $Features, $Home);
+getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tutorial, $sett, $About, $Features, $Home, $Credits);
 ?>
 <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#23272a","text":"#ffffff","border":"#ffa500"},"button":{"background":"#ffa500","text":"#ffffff"}},"corners":"large","padding":"small","margin":"large","content":{"message":"<?php include ("src/laungage/". $jazyk .".php"); echo $Cookies;?>","link":"<?php include ("src/laungage/". $jazyk .".php"); echo $MoreInfo;?>","button":"<?php include ("src/laungage/". $jazyk .".php"); echo $BTNCookies;?>", "href":"https://www.cookiepolicygenerator.com/live.php?token=4NrLLhbRTNIZB7z1P7PjSqt7uPoA8jge"}})});</script>
 <div class="heading text-center">
@@ -72,19 +73,19 @@ getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tut
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php include ("src/laungage/". $jazyk .".php"); echo $Servers;?></h5>
-                <h1 style="font-weight: bold !important">3</h1>
+                <h1 style="font-weight: bold !important">8+</h1>
             </div>
         </div>
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php include ("src/laungage/". $jazyk .".php"); echo $Users;?></h5>
-                <h1 style="font-weight: bold !important">12+</h1>
+                <h1 style="font-weight: bold !important">67+</h1>
             </div>
         </div>
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php include ("src/laungage/". $jazyk .".php"); echo $Channels;?></h5>
-                <h1 style="font-weight: bold !important">40+</h1>
+                <h1 style="font-weight: bold !important">223+</h1>
             </div>
         </div>
     </div>

@@ -20,7 +20,7 @@ if($jazyk == null){
     <link rel="stylesheet" href="https://thumbie.me/src/css/panel.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
     <title><?php include ("../src/laungage/". $jazyk .".php"); echo $TitlePanel;?></title>
-    <script href="https://private.greenlandmc.eu/tajny-projekt/GGGEDR/Thumbie/cookies/Laungage.js"></script>
+    <script href="https://thumbie.me/cookies/Laungage.js"></script>
     <meta name="author" content="GGGEDR">
     <script>function odhlasit() {
             document.cookie = "user_id=null;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
@@ -31,7 +31,7 @@ if($jazyk == null){
 <body onload="<?php if($_SESSION['id'] == null){ echo "location.href = 'https://discordapp.com/api/oauth2/authorize?client_id=699959562454827009&redirect_uri=https%3A%2F%2Fthumbie.me%2Fpanel%2Fintegrations%2Fdiscord%2FOAuth2%2Flogin.php&response_type=code&scope=identify%20guilds%20email';";}?>">
 <?php
 include ("../MicroPaths.php");
-getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tutorial, $sett, $About, $Features, $Home);
+getNavbar($Servers, $Settings, $Logout, $IsLogged, $Login, $Doc, $Commands, $Tutorial, $sett, $About, $Features, $Home, $Credits);
 ?>
 <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#23272a","text":"#ffffff","border":"#ffa500"},"button":{"background":"#ffa500","text":"#ffffff"}},"corners":"large","padding":"small","margin":"large","content":{"message":"<?php include ("src/laungage/". $jazyk .".php"); echo $Cookies;?>","link":"<?php include ("src/laungage/". $jazyk .".php"); echo $MoreInfo;?>","button":"<?php include ("src/laungage/". $jazyk .".php"); echo $BTNCookies;?>", "href":"https://www.cookiepolicygenerator.com/live.php?token=4NrLLhbRTNIZB7z1P7PjSqt7uPoA8jge"}})});</script>
 <div class="heading text-center" style="text-align: left !important;">

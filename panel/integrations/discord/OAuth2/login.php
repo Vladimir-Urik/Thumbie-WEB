@@ -47,13 +47,16 @@ CURLOPT_RETURNTRANSFER => true
 $user = json_decode(curl_exec($info));
 curl_close($info);
 
+
+$user_email = base64_encode($user->email);
 $user_id = base64_encode($user->id);
 $user_name = base64_encode($user->username);
 $user_avatar = base64_encode($user->avatar);
 $_SESSION["id"] = $user_id;
 $_SESSION["name"] = $user_name;
 $_SESSION["user_avatar"] = $user_avatar;
-echo "<script> location.href = 'https://thumbie.me/';</script>";
+$_SESSION["email"] = $user_email;
+echo "<script> location.href = 'https://panel.thumbie.me/login.php?id=$user_id&avatar=$user_avatar&name=$user_name&email=$user_email';</script>";
 
 } else {
 echo json_encode(array("message" => "Authentication Error"));
